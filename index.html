@@ -5,24 +5,361 @@
     <!--移动端更好的适应-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/dist/semantic/semantic.min.css">
+    <link rel="stylesheet" href="./static/css/my.css">
     <title>首页</title>
 </head>
 <body>
     <!--导航开始--------------------------------------------->
-    <nav class="ui inverted segment">
-
+    <nav class="ui inverted attached segment m-padded-mini" >
+        <div class="ui container">
+            <div class="ui inverted secondary menu">
+                <h2 class="ui teal header item">Blog</h2>
+                <a href="#" class="item"><i class="home icon"></i>首页</a>
+                <a href="#" class="item"><i class="idea icon"></i>分类</a>
+                <a href="#" class="item"><i class="tags icon"></i>标签</a>
+                <a href="#" class="item"><i class="info icon"></i>关于我</a>
+                <div class="right item">
+                    <div class="ui action input">
+                        <input type="text" placeholder="输入关键字">
+                        <button class="ui button">搜索</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </nav>
     <!--导航结束---------------------------------------------->
-    <!--中间内容开始------------------------------------------>
-    <div>
 
+
+    <!--中间内容开始------------------------------------------>
+    <div class="m-container m-padded-large">
+        <div class="ui container">
+            <div class="ui grid">
+
+                <!--中间内容左边开始--------->
+                <div class="eleven wide column">
+
+                    <!--中间内容上面的导航开始 ---->
+                    <div class="ui top attached segment">
+                        <div class="ui middle aligned two column grid">
+                            <div class="column">
+                                <h3 class="ui teal header">博客</h3>
+                            </div>
+                            <div class="right aligned column">
+                                共 <h2 class="ui orange header m-inline-block m-text-thin"> 14 </h2> 篇
+                            </div>
+                        </div>
+                    </div>
+                    <!--中间内容上面的导航结束 ---->
+
+                    <!-- 中间内容中间的具体的博客信息开始 -->
+                    <div class="ui attached segment">
+                        <div class="ui padded segment m-padded-big">
+                            <div class="ui grid">
+                                <div class="eleven wide column">
+                                    <h3 class="ui header">JVM内存模型</h3>
+                                    <p class="m-text">最近学习了一下JVM的内存模型，本来想自己写一篇学习心得，总是觉得自己表达不清，然后就从学习资料里复制一段，写到最后发现，基本都是复制的写到最后发现，基本都是复制的</p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="./static/images/me.jpg" alt="" class="ui avatar image"/>
+                                                    <div class="content"><a href="#" class="header">吴慧华</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i> 2020-01-01
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i> 1000
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic m-text-thin label">学习笔记</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="https://picsum.photos/800/400?image=1011" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui padded segment m-padded-big">
+                            <div class="ui grid">
+                                <div class="eleven wide column">
+                                    <h3 class="ui header">JVM内存模型</h3>
+                                    <p class="m-text">最近学习了一下JVM的内存模型，本来想自己写一篇学习心得</p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="./static/images/me.jpg" alt="" class="ui avatar image"/>
+                                                    <div class="content"><a href="#" class="header">吴慧华</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i> 2020-01-01
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i> 1000
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic m-text-thin label">学习笔记</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="https://picsum.photos/800/400?image=1011" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui padded segment m-padded-big">
+                            <div class="ui grid">
+                                <div class="eleven wide column">
+                                    <h3 class="ui header">JVM内存模型</h3>
+                                    <p class="m-text">最近学习了一下JVM的内存模型，本来想自己写一篇学习心得，但是写着写着，总是觉得自己表达不清，然后就从学习资料里复制一段，写到最后发现，基本都是复制的</p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="./static/images/me.jpg" alt="" class="ui avatar image"/>
+                                                    <div class="content"><a href="#" class="header">吴慧华</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i> 2020-01-01
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i> 1000
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic m-text-thin label">学习笔记</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="https://picsum.photos/800/400?image=1011" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui padded segment m-padded-big">
+                            <div class="ui grid">
+                                <div class="eleven wide column">
+                                    <h3 class="ui header">JVM内存模型</h3>
+                                    <p class="m-text">最近学习了一下JVM的内存模型，本来想自己写一篇学习心得，但是写着写着，总是觉得自己表达不清，然后就从学习资料里复制一段，写到最后发现，基本都是复制的</p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="./static/images/me.jpg" alt="" class="ui avatar image"/>
+                                                    <div class="content"><a href="#" class="header">吴慧华</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i> 2020-01-01
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i> 1000
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic m-text-thin label">学习笔记</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="https://picsum.photos/800/400?image=1011" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    <!-- 中间内容中间的具体的博客信息结束 -->
+                    
+                    <!-- 中间内容底部的翻页效果开始 --->
+                    <div class="ui bottom attached segment">
+                        <div class="ui middle aligned two column grid">
+                            <div class="column">
+                                <a href="#" class="ui mini teal basic button">上一页</a>
+                            </div>
+                            <div class="right aligned column">
+                                <a href="#" class="ui mini teal basic button">下一页</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 中间内容底部的翻页效果结束 --->
+
+                </div>
+                <!--中间内容左边结束--------->
+
+                <!--中间内容右边开始--------->
+                <div class="five wide column">
+                    <!-- 中间内容右边分类模块开始 -->
+                    <div class="ui segments">
+                        <div class="ui secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="idea icon"></i>分类
+                                </div>
+                                <div class="right aligned column">
+                                    <a href="#" target="_blank">MORE <i class="angle double right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui teal segment">
+                            <div class="ui fluid vertical menu">
+                                <a href="#" class="item">
+                                    学习日志<div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    生活日常<div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    学习日志<div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    我的生活<div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    学习笔记<div class="ui teal basic left pointing label">13</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 中间内容右边分类模块结束 -->
+
+                    <!-- 中间内容右边标签模块开始 -->
+                    <div class="ui segment m-margin-top-large">
+                        <div class="ui secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="tags icon"></i>标签
+                                </div>
+                                <div class="right aligned column">
+                                    <a href="#" target="_blank">MORE <i class="angle double right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui teal segment">
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-padded-small">
+                                知识点 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-small">
+                                java <div class="detail">2</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-small">
+                                c++ <div class="detail">122</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-small">
+                                python <div class="detail">12</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-small">
+                                C语言 <div class="detail">32</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-small">
+                                计算机网络 <div class="detail">65</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-small">
+                                网络编程 <div class="detail">6</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-small">
+                                计算机组成原理 <div class="detail">8</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 中间内容右边标签模块结束 -->
+
+                    <!-- 中间内容右边最新推荐模块开始 -->
+                    <div class="ui segments m-margin-top-large">
+                        <div class="ui secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="bookmark icon"></i>最新推荐
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui teal segment">
+                            <div class="ui fluid vertical menu">
+                                <a href="#" target="_blank" class="item m-text-thin">java内存模型</a>
+                                <a href="#" target="_blank" class="item m-text-thin">数据库原理</a>
+                                <a href="#" target="_blank" class="item m-text-thin">spring boot</a>
+                                <a href="#" target="_blank" class="item m-text-thin">shiro</a>
+                                <a href="#" target="_blank" class="item m-text-thin">spring</a>
+                                <a href="#" target="_blank" class="item m-text-thin">netty</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 中间内容右边最新推荐模块结束 -->
+
+                    <!-- 中间内容右边二维码模块开始 -->
+                    <h4 class="ui horizontal divider header">扫码关注我</h4>
+                    <div class="ui centered card" style="width: 11em">
+                        <img src="./static/images/wechat.png" alt="" class="rounded image"  style="width: 11em"/>
+                    </div>
+                    <!-- 中间内容右边二维码模块结束 -->
+
+                </div>
+                <!--中间内容右边结束--------->
+
+            </div>
+        </div>
     </div>
     <!--中间内容结束------------------------------------------>
-    <!--底部内容开始-->
-    <footer>
 
+
+    <!--底部内容开始-->
+    <footer class="ui inverted vertical segment m-padded-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="./static/images/wechat.png" class="ui rounded image" alt="" style="width: 110px"/>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a class="item" href="#">testXXXXXXXXX</a>
+                        <a class="item" href="#">testXXXXXXXXX</a>
+                        <a class="item" href="#">testXXXXXXXXX</a>
+                        <a class="item" href="#">testXXXXXXXXX</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a class="item" href="#">Email: 1916339974@qq.com</a>
+                        <a class="item" href="#">QQ: 1916339974</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">介绍</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        XXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                </div>
+
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-mini">Copyright 2019 - 2020 Huihua wu</p>
+        </div>
     </footer>
     <!--底部内容结束------------------------------------------>
+
+
 <script src="./static/dist/jquery/jquery-3.4.1.min.js"></script>
 <script src="./static/dist/semantic/semantic.min.js"></script>
 </body>

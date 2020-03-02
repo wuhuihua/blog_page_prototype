@@ -1,0 +1,91 @@
+
+/* ----- text文本样式 ---------- */
+.m-text {
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.8 !important;
+}
+.m-text-thin {
+    font-weight: 300 !important;
+}
+.m-text-spaced {
+    letter-spacing: 1px !important;
+}
+.m-text-lined {
+    line-height: 1.8 !important;
+}
+.m-opacity-mini {
+    opacity: 0.8;
+}
+/* ---------------------------------------------- */
+
+/* display 显示的配置  --------------------*/
+.m-inline-block {
+    display: inline-block !important;
+}
+.m-container {
+    max-width: 80em !important;
+    margin: auto !important;
+}
+/* ---------------------------------------------- */
+
+
+
+
+
+
+/*--------------- padding 配置 --------------------*/
+.m-padded-mini {
+     padding-top: 0.2em !important;
+     padding-bottom: 0.2em !important;
+ }
+.m-padded-small {
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+.m-padded {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+
+.m-padded-large {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+}
+
+.m-padded-big {
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+}
+
+.m-padded-huge {
+    padding-top: 4em !important;
+    padding-bottom: 4em !important;
+}
+
+.m-padded-massive{
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
+}
+/* ---------------------------------------------- */
+
+/*------------ margin 配置 -------------------- */
+.m-margin-small {
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+.m-margin-top-small {
+    margin-top: 0.5em !important;
+}
+.m-margin-top {
+    margin-top: 1em !important;
+}
+.m-margin-top-large {
+    margin-top: 2em !important;
+}
+/* ---------------------------------------------- */
+
+/* ------ color配置 ----------------*/
+.m-black {
+    color: #333 !important;
+}
