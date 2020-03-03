@@ -12,13 +12,13 @@
     <!--导航开始--------------------------------------------->
     <nav class="ui inverted attached segment m-padded-mini" >
         <div class="ui container">
-            <div class="ui inverted secondary menu">
+            <div class="ui inverted secondary stackable menu">
                 <h2 class="ui teal header item">Blog</h2>
-                <a href="#" class="item"><i class="home icon"></i>首页</a>
-                <a href="#" class="item"><i class="idea icon"></i>分类</a>
-                <a href="#" class="item"><i class="tags icon"></i>标签</a>
-                <a href="#" class="item"><i class="info icon"></i>关于我</a>
-                <div class="right item">
+                <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+                <div class="right m-item item m-mobile-hide">
                     <div class="ui action input">
                         <input type="text" placeholder="输入关键字">
                         <button class="ui button">搜索</button>
@@ -26,6 +26,10 @@
                 </div>
             </div>
         </div>
+
+        <a href="#" class="ui m-menu m-toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
     </nav>
     <!--导航结束---------------------------------------------->
 
@@ -33,7 +37,7 @@
     <!--中间内容开始------------------------------------------>
     <div class="m-container m-padded-large">
         <div class="ui container">
-            <div class="ui grid">
+            <div class="ui stackable grid">
 
                 <!--中间内容左边开始--------->
                 <div class="eleven wide column">
@@ -54,7 +58,7 @@
                     <!-- 中间内容中间的具体的博客信息开始 -->
                     <div class="ui attached segment">
                         <div class="ui padded segment m-padded-big">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
                                     <h3 class="ui header">JVM内存模型</h3>
                                     <p class="m-text">最近学习了一下JVM的内存模型，本来想自己写一篇学习心得，总是觉得自己表达不清，然后就从学习资料里复制一段，写到最后发现，基本都是复制的写到最后发现，基本都是复制的</p>
@@ -74,7 +78,7 @@
                                             </div>
                                         </div>
                                         <div class="right aligned five wide column">
-                                            <a href="#" target="_blank" class="ui teal basic m-text-thin label">学习笔记</a>
+                                            <a href="#" target="_blank" class="ui teal basic m-padded-all-mini m-text-thin label">学习笔记</a>
                                         </div>
                                     </div>
                                 </div>
@@ -86,10 +90,10 @@
                             </div>
                         </div>
                         <div class="ui padded segment m-padded-big">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
                                     <h3 class="ui header">JVM内存模型</h3>
-                                    <p class="m-text">最近学习了一下JVM的内存模型，本来想自己写一篇学习心得</p>
+                                    <p class="m-text">最近学习了一下JVM的内存模型，本来想自己写一篇学习心得，总是觉得自己表达不清，然后就从学习资料里复制一段，写到最后发现，基本都是复制的写到最后发现，基本都是复制的</p>
                                     <div class="ui grid">
                                         <div class="eleven wide column">
                                             <div class="ui mini horizontal link list">
@@ -106,7 +110,7 @@
                                             </div>
                                         </div>
                                         <div class="right aligned five wide column">
-                                            <a href="#" target="_blank" class="ui teal basic m-text-thin label">学习笔记</a>
+                                            <a href="#" target="_blank" class="ui teal basic m-padded-all-mini m-text-thin label">学习笔记</a>
                                         </div>
                                     </div>
                                 </div>
@@ -118,10 +122,10 @@
                             </div>
                         </div>
                         <div class="ui padded segment m-padded-big">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
                                     <h3 class="ui header">JVM内存模型</h3>
-                                    <p class="m-text">最近学习了一下JVM的内存模型，本来想自己写一篇学习心得，但是写着写着，总是觉得自己表达不清，然后就从学习资料里复制一段，写到最后发现，基本都是复制的</p>
+                                    <p class="m-text">最近学习了一下JVM的内存模型，本来想自己写一篇学习心得，总是觉得自己表达不清，然后就从学习资料里复制一段，写到最后发现，基本都是复制的写到最后发现，基本都是复制的</p>
                                     <div class="ui grid">
                                         <div class="eleven wide column">
                                             <div class="ui mini horizontal link list">
@@ -138,7 +142,7 @@
                                             </div>
                                         </div>
                                         <div class="right aligned five wide column">
-                                            <a href="#" target="_blank" class="ui teal basic m-text-thin label">学习笔记</a>
+                                            <a href="#" target="_blank" class="ui teal basic m-padded-all-mini m-text-thin label">学习笔记</a>
                                         </div>
                                     </div>
                                 </div>
@@ -150,10 +154,10 @@
                             </div>
                         </div>
                         <div class="ui padded segment m-padded-big">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
                                     <h3 class="ui header">JVM内存模型</h3>
-                                    <p class="m-text">最近学习了一下JVM的内存模型，本来想自己写一篇学习心得，但是写着写着，总是觉得自己表达不清，然后就从学习资料里复制一段，写到最后发现，基本都是复制的</p>
+                                    <p class="m-text">最近学习了一下JVM的内存模型，本来想自己写一篇学习心得，总是觉得自己表达不清，然后就从学习资料里复制一段，写到最后发现，基本都是复制的写到最后发现，基本都是复制的</p>
                                     <div class="ui grid">
                                         <div class="eleven wide column">
                                             <div class="ui mini horizontal link list">
@@ -170,7 +174,7 @@
                                             </div>
                                         </div>
                                         <div class="right aligned five wide column">
-                                            <a href="#" target="_blank" class="ui teal basic m-text-thin label">学习笔记</a>
+                                            <a href="#" target="_blank" class="ui teal basic m-padded-all-mini m-text-thin label">学习笔记</a>
                                         </div>
                                     </div>
                                 </div>
@@ -184,7 +188,7 @@
                         <br><br>
                     </div>
                     <!-- 中间内容中间的具体的博客信息结束 -->
-                    
+
                     <!-- 中间内容底部的翻页效果开始 --->
                     <div class="ui bottom attached segment">
                         <div class="ui middle aligned two column grid">
@@ -321,7 +325,7 @@
     <!--底部内容开始-->
     <footer class="ui inverted vertical segment m-padded-massive">
         <div class="ui center aligned container">
-            <div class="ui inverted divided grid">
+            <div class="ui inverted divided stackable grid">
                 <div class="three wide column">
                     <div class="ui inverted link list">
                         <div class="item">
@@ -362,5 +366,10 @@
 
 <script src="./static/dist/jquery/jquery-3.4.1.min.js"></script>
 <script src="./static/dist/semantic/semantic.min.js"></script>
+<script>
+    $('.m-menu.m-toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+</script>
 </body>
 </html>

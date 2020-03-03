@@ -29,12 +29,21 @@
 }
 /* ---------------------------------------------- */
 
-
+/* --------- 位置配置 ---------------------- */
+.m-right-top {
+    position: absolute;
+    top: 20%;
+    right: 0;
+}
+/* ---------------------------------------------- */
 
 
 
 
 /*--------------- padding 配置 --------------------*/
+.m-padded-all-mini {
+    padding: 0.3em !important;
+}
 .m-padded-mini {
      padding-top: 0.2em !important;
      padding-bottom: 0.2em !important;
@@ -89,3 +98,19 @@
 .m-black {
     color: #333 !important;
 }
+/* --------------------------------------------- */
+
+.m-mobile-show {
+    display: none !important;
+}
+
+/* ----------- 媒体查询 ----------------------- */
+@media screen and (max-width: 768px) {
+    .m-mobile-hide {
+        display: none !important;
+    }
+    .m-mobile-show {
+        display: block !important;
+    }
+}
+
