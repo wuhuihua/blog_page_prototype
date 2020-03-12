@@ -1,4 +1,9 @@
 
+body {
+    background: url("../images/back.png");
+}
+
+
 /* ----- text文本样式 ---------- */
 .m-text {
     font-weight: 300 !important;
@@ -17,6 +22,9 @@
 .m-opacity-mini {
     opacity: 0.8;
 }
+.m-opacity-tiny {
+    opacity: 0.6;
+}
 /* ---------------------------------------------- */
 
 /* display 显示的配置  --------------------*/
@@ -27,12 +35,21 @@
     max-width: 80em !important;
     margin: auto !important;
 }
+.m-container-small {
+    max-width: 65em !important;
+    margin: auto !important;
+}
+.m-image-size-square {
+    width: 300px;
+    height: 130px;
+}
+
 /* ---------------------------------------------- */
 
 /* --------- 位置配置 ---------------------- */
 .m-right-top {
     position: absolute;
-    top: 20%;
+    top: 16px;
     right: 0;
 }
 /* ---------------------------------------------- */
@@ -76,6 +93,12 @@
     padding-top: 5em !important;
     padding-bottom: 5em !important;
 }
+
+.m-padded-left-right {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
 /* ---------------------------------------------- */
 
 /*------------ margin 配置 -------------------- */
@@ -92,6 +115,7 @@
 .m-margin-top-large {
     margin-top: 2em !important;
 }
+
 /* ---------------------------------------------- */
 
 /* ------ color配置 ----------------*/
