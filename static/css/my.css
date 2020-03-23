@@ -32,7 +32,7 @@ body {
     display: inline-block !important;
 }
 .m-container {
-    max-width: 80em !important;
+    max-width: 75em !important;
     margin: auto !important;
 }
 .m-container-small {
@@ -61,6 +61,9 @@ body {
 .m-padded-all-mini {
     padding: 0.3em !important;
 }
+.m-padded-all {
+    padding: 0.8em !important;
+}
 .m-padded-mini {
      padding-top: 0.2em !important;
      padding-bottom: 0.2em !important;
@@ -81,7 +84,7 @@ body {
 
 .m-padded-big {
     padding-top: 3em !important;
-    padding-bottom: 3em !important;
+    padding-bottom: 2em !important;
 }
 
 .m-padded-huge {
@@ -95,6 +98,10 @@ body {
 }
 
 .m-padded-left-right {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.m-padded-left-right-responsive {
     padding-left: 2em;
     padding-right: 2em;
 }
@@ -115,8 +122,31 @@ body {
 .m-margin-top-large {
     margin-top: 2em !important;
 }
+.m-margin-bottom-small {
+    margin-bottom: 0.5em !important;
+}
+.m-margin-left-small {
+    margin-left: 1em !important;
+}
+.m-margin-right-small {
+    margin-right: 1em !important;
+}
 
 /* ---------------------------------------------- */
+
+/* ------ color布局 ----------------*/
+.m-fixed {
+    position: fixed !important;
+    z-index: 10 !important;
+}
+.m-right-bottom {
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
+/* ---------------------------------------------- */
+
+
 
 /* ------ color配置 ----------------*/
 .m-black {
@@ -127,6 +157,10 @@ body {
 .m-mobile-show {
     display: none !important;
 }
+.m-shadow-small {
+    -webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}
 
 /* ----------- 媒体查询 ----------------------- */
 @media screen and (max-width: 768px) {
@@ -136,5 +170,17 @@ body {
     .m-mobile-show {
         display: block !important;
     }
+    .m-padded-left-right-responsive {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .m-mobile-wide {
+        width: 100% !important;
+    }
+    .m-mobile-lr-clear {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 }
 
+ 

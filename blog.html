@@ -5,12 +5,16 @@
     <!--移动端更好的适应-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/dist/semantic/semantic.min.css">
+    <link rel="stylesheet" href="./static/css/typo.css">
     <link rel="stylesheet" href="./static/css/my.css">
+    <link rel="stylesheet" href="./static/css/my.css">
+    <link rel="stylesheet" href="./static/lib/prism/prism.css">
+    <link rel="stylesheet" href="./static/lib/tocbot/tocbot.css">
     <title>博客详情</title>
 </head>
 <body>
     <!--导航开始--------------------------------------------->
-    <nav class="ui inverted attached segment m-padded-mini" >
+    <nav class="ui inverted attached segment m-padded-mini m-shadow-small">
         <div class="ui container">
             <div class="ui inverted secondary stackable menu">
                 <h2 class="ui teal header item">Blog</h2>
@@ -36,8 +40,8 @@
 
 
     <!--中间内容开始------------------------------------------>
-    <div class="m-container-small m-padded-large">
-        <div class="ui container">
+    <div id="waypoint" class="m-container-small m-padded-large">
+        <div class="ui container animated bounceInLeft">
             <!--中间内容头部信息开始-->
             <div class="ui top attached segment">
                 <div class="ui horizontal link list">
@@ -66,27 +70,119 @@
                 <div class="ui right aligned basic segment">
                     <div class="ui green basic label">转载</div>
                 </div>
-                <h2 class="ui center aligned header">JVM内存模型</h2><br>
+
                 <!--博客具体内容-->
-                <div id="m-id-content" class="m-padded-left-right">
-                    <h3>前言</h3>
-                    <p>最近学习了一下JVM的内存模型，本来想自己写一篇学习心得，但是写着写着，总是觉得自己表达不清，然后就从学习资料里复制一段，写到最后发现，基本都是复制的...因此，还是决定转载一篇比较完整的文章，慢慢学习吧~ 原文地址：https://ac.nowcoder.com/discuss/151138?type=1</p>
-                    <p>内存是非常重要的系统资源，是硬盘和CPU的中间仓库及桥梁，承载着操作系统和应用程序的实时运行<br />JVM内存布局规定了Java在运行过程中内存申请、分配、管理的策略，保证了JVM的高效稳定运行<br />不同的JVM对于内存的划分方式和管理机制存在着部分差异<br />结合JVM虚拟机规范，来探讨经典的JVM内存布局<br />
-                    <h1>1 Program Counter Register (程序计数寄存器)</h1>
-                    <p>Register 的命名源于CPU的寄存器，CPU只有把数据装载到寄存器才能够运行<br />寄存器存储指令相关的现场信息，由于CPU时间片轮限制，众多线程在并发执行过程中，任何一个确定的时刻，一个处理器或者多核处理器中的一个内核，只会执行某个线程中的一条指令。这样必然导致经常中断或恢复，如何保证分毫无差呢?<br />每个线程在创建后，都会产生自己的程序计数器和栈帧，程序计数器用来存放执行指令的偏移量和行号指示器等，线程执行或恢复都要依赖程序计数器。程序计数器在各个线程之间互不影响，此区域也不会发生内存溢出异常。</p>
-                    <h2>1.1. 定义</h2>
-                    <p>程序计数器是一块较小的内存空间，可看作当前线程正在执行的字节码的行号指示器<br />如果当前线程正在执行的是</p>
-                    <ul><li><p>Java方法<br />计数器记录的就是当前线程正在执行的字节码指令的地址</p></li><li><p>本地方法<br />那么程序计数器值为undefined</p></li></ul>
-                    <h2>1.2. 作用</h2>
-                    <p>程序计数器有两个作用</p>
-                    <h2>1.3. 特点</h2>
-                    <p>一块较小的内存空间<br />线程私有。每条线程都有一个独立的程序计数器。<br />是唯一一个不会出现OOM的内存区域。<br />生命周期随着线程的创建而创建，随着线程的结束而死亡。</p>
-                    <h1>2. Java虚拟机栈(JVM Stack)</h1>
-                    <h2>2.1. 定义</h2>
-                    <p>相对于基于寄存器的运行环境来说，JVM是基于栈结构的运行环境<br />栈结构移植性更好，可控性更强<br />JVM中的虚拟机栈是描述Java方法执行的内存区域，它是线程私有的</p>
+                <div id="m-id-content" class="typo typo-selection js-toc-content m-padded-left-right-responsive m-padded-large">
+                    <h2 id="section1">一、关于 <i class="serif">Typo.css</i></h2>
+                    <pre><code class="language-css">p { color: red }</code></pre>
+
+                    <p><i class="serif">Typo.css</i> 的目的是，在一致化浏览器排版效果的同时，构建最适合中文阅读的网页排版。</p>
+                    <h4>现状和如何去做：</h4>
+                    <h2 id="section1">一、关于 <i class="serif">Typo.css</i></h2>
+                    <table class="ui table" summary="Typo.css 的测试平台列表">
+                      <thead>
+                      <tr>
+                        <th>OS/浏览器</th>
+                        <th>Firefox</th>
+                        <th>Chrome</th>
+                        <th>Safari</th>
+                        <th>Opera</th>
+                        <th>IE9</th>
+                        <th>IE8</th>
+                        <th>IE7</th>
+                        <th>IE6</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>OS X</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td>Win 7</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td>Win XP</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>-</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                      </tr>
+                      <tr>
+                        <td>Ubuntu</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>-</td>
+                        <td>✔</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      </tbody>
+                    </table>
+
+                    <h4>中文排版的重点和难点</h4>
+
+                    <p>在中文排版中，HTML4 的很多标准在语义在都有照顾到。但从视觉效果上，却很难利用单独的 CSS 来实现，像<abbr title="在文字下多加一个点">着重号</abbr>（例：这里<em class="typo-em">强调一下</em>）。在 HTML4 中，专名号标签（<code>&lt;u&gt;</code>）已经被放弃，而
+                      HTML5 被<a href="http://html5doctor.com/u-element/">重新提起</a>。<i class="serif">Typo.css</i> 也根据实际情况提供相应的方案。我们重要要注意的两点是：</p>
+                    <ol>
+                      <li>语义：语义对应的用法和样式是否与中文排版一致</li>
+                      <li>表现：在各浏览器中的字体、大小和缩放是否如排版预期</li>
+                    </ol>
+                    <p>对于这些，<i class="serif">Typo.css</i> 排版项目的中文偏重注意点，都添加在附录中，详见：</p>
+                    <blockquote>
+                      <b>附录一</b>：<a href="#appendix1"><i class="serif">Typo.css</i> 排版偏重点</a>
+                    </blockquote>
+                    <h2 id="section2">二、排版实例：</h2>
+
+
+                    <p>目前已有像百姓网等全面使用 <i class="serif">Typo.css</i> 的项目，测试平台的覆盖，特别是在<abbr title="手机、平板电脑等移动平台">移动端</abbr>上还没有覆盖完主流平台，希望有能力的同学能加入测试行列，或者加入到 <i class="serif">Typo.css</i>
+                      的开发。加入方法：<a href="https://github.com/sofish/Typo.css">参与 <i class="serif">Typo.css</i> 开发</a>。如有批评、建议和意见，也随时欢迎给在 Github 直接提 <a
+                        href="https://github.com/sofish/Typo.css/issues">issues</a>，或给<abbr title="Sofish Lin, author of Typo.css"
+                                                                                            role="author">我</abbr>发<a
+                        href="mailto:sofish@icloud.com">邮件</a>。</p>
+
+
+                    <h2 id="section2">二、排版实例：</h2>
+
+                    <p>提供2个排版实例，第一个中文实例来自于来自于<cite class="typo-unique">张燕婴</cite>的《论语》，由于古文排版涉及到的元素比较多，所以采用《论语》中《学而》的第一篇作为排版实例介绍；第2个来自到经典的
+                      Lorem Ipsum，并加入了一些代码和列表等比较具有代表性的排版元素。</p>
+
+                    <h3 id="section2-1">例1：论语学而篇第一</h3>
+                    <h2 id="section2">二、排版实例：</h2>
+                    <h2 id="section2">二、排版实例：</h2>
+
+                    <p>
+                      <small><b>作者：</b><abbr title="名丘，字仲尼">孔子</abbr>（
+                        <time>前551年9月28日－前479年4月11日</time>
+                        ）
+                      </small>
+                    </p>
+
+                    <h4>本篇引语</h4>
                 </div><br>
                 <!--标签-->
-                <div class="m-padded-left-right">
+                <div class=".m-padded-left-right-responsive">
                     <div class="ui basic teal left pointing label">java</div>
                 </div>
                 <!--赞赏-->
@@ -130,7 +226,7 @@
             <!--中间内容博客其他信息结束-->
 
             <!--中间内容留言区域开始-->
-            <div class="ui bottom attached segment">
+            <div id="comment-container" class="ui bottom attached segment">
                 <!--中间内容留言区域列表-->
                 <div class="ui teal segment">
 
@@ -207,11 +303,20 @@
                         <textarea name="content" placeholder="请输入评论信息 ... "></textarea>
                     </div>
                     <div class="fields">
-                        <div class="field">
-                            <input type="text" name="nickname" placeholder="姓名">
+                        <div class="field m-mobile-wide m-margin-bottom-small">
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="nickname" placeholder="姓名">
+                            </div>
                         </div>
-                        <div class="field">
-                            <input type="text" name="email" placeholder="邮箱">
+                        <div class="field m-mobile-wide m-margin-bottom-small">
+                            <div class="ui left icon input">
+                                <i class="mail icon"></i>
+                                <input type="text" name="email" placeholder="邮箱">
+                            </div>
+                        </div>
+                        <div class="field m-margin-bottom-small m-mobile-wide">
+                            <button class="ui teal button m-mobile-wide"><i class="edit icon"></i>发布</button>
                         </div>
                     </div>
                 </div>
@@ -220,6 +325,26 @@
         </div>
     </div>
     <!--中间内容结束------------------------------------------>
+
+
+    <!-- 右边小工具条开始  ---------------->
+    <div id="toolbar" class="m-padded-all m-fixed m-right-bottom" style="display: none;">
+        <div class="ui vertical icon buttons ">
+            <button type="button" class="ui toc-button teal button">文章目录</button>
+            <a href="#comment-container" class="ui teal button">留言</a>
+            <button class="ui wechatReadBut icon button"><i class="weixin icon"></i> 扫码阅读</button>
+            <div id="toTop-button" class="ui icon button"><i class="chevron up icon"></i> 回到首部</div>
+        </div> 
+    </div>
+    <div class="ui toc-comtainer flowing popup transition hidden" style="width: 300px !important;">
+        <ol class="js-toc">
+            
+        </ol>
+    </div>
+    <div id="qrcode" class="ui wechatRead flowing popup transition hidden" style="width: 130px !important">
+        <!-- <img src="./static/images/wechat.png" class="ui rounded image" style="width: 100px" /> -->
+    </div>
+    <!-- 右边小工具条结束  ---------------->
 
     <!--底部内容开始-->
     <footer class="ui inverted vertical segment m-padded-massive">
@@ -265,6 +390,11 @@
 
 <script src="./static/dist/jquery/jquery-3.4.1.min.js"></script>
 <script src="./static/dist/semantic/semantic.min.js"></script>
+<script src="./static/lib/scrollTo/scrollTo.min.js"></script>
+<script src="./static/lib/prism/prism.js"></script>
+<script src="./static/lib/tocbot/tocbot.js"></script>
+<script src="./static/lib/qrcode/qrcode.min.js"></script>
+<script src="./static/lib/waypoints/waypoints.min.js"></script>
 <script>
     $('.m-menu.m-toggle').click(function () {
         $('.m-item').toggleClass('m-mobile-hide');
@@ -275,6 +405,53 @@
         on : 'click',
         position: 'bottom center'
     });
+
+    /* 初始化文章目录 */
+    tocbot.init({
+      // 指定在哪放置这个文章目录
+      tocSelector: '.js-toc',
+      // 需要指定为哪个里面的内容生成目录
+      contentSelector: '.js-toc-content',
+      // 指定生成的级别
+      headingSelector: 'h1, h2, h3, h4',
+      // For headings inside relative or absolute positioned containers within content.
+      hasInnerContainers: true
+    });
+
+    $('.toc-button').popup({
+       popup : $('.toc-comtainer.popup'),
+        on : 'click',
+        position: 'left center'
+    });
+    $('.wechatReadBut').popup({
+       popup : $('.wechatRead'),
+        on : 'hover',
+        position: 'left center'
+    });
+
+    var qrcode = new QRCode("qrcode", {
+        text: "http://jindo.dev.naver.com/collie",
+        width: 100,
+        height: 100,
+        colorDark : "#000000",
+        colorLight : "#ffffff",
+        correctLevel : QRCode.CorrectLevel.H
+    });
+
+    $('#toTop-button').click(function() {
+        $(window).scrollTo(0,800);
+    });
+
+    var waypoint = new Waypoint({
+      element: document.getElementById('waypoint'),
+      handler: function(direction) {
+        if(direction == 'down') {
+            $('#toolbar').show(400);
+        } else {
+            $('#toolbar').hide(400);
+        }
+      }
+    })
 
 </script>
 </body>
